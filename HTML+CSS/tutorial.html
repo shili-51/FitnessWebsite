@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+  <title>FITNESS</title>
+</head>
+<link rel="stylesheet" href="css/begin.css">
+<style>
+  /* css reset*/
+  body {
+    margin: 0px;
+    padding: 0px;
+    background: url('pictures/people-2592247_1920.jpg');
+    color:black;
+    height:640px;
+    font-family: 'Gabriela', serif;
+  }
+
+  .left {
+    /* border: 5px solid aqua; */
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left:55px;
+
+  }
+
+  .left img {
+    width: 140px;
+  }
+
+  .left div {
+    text-align: center;
+  }
+
+  .mid {
+    /* border: 5px solid yellow; */
+    display: block;
+    width: 50%;
+    margin: 17px auto;
+  }
+
+  .right {
+    /* border: 5px solid whitesmoke; */
+    display: inline-block;
+    position: absolute;
+    top: 32px;
+    right: 10px;
+  }
+
+  .navbar {
+    display: inline-block;
+  }
+
+  .navbar li {
+    display: inline-block;
+    font-size: 23px;
+  }
+
+  .navbar li a {
+    color:black;
+    text-decoration: none;
+    padding: 34px 23px;
+    font-weight:bold;
+  }
+
+  .navbar li a:hover,
+  .navbar li a.active {
+    color: rgb(6, 98, 129);
+    text-decoration:none;
+    padding: 34px 23px;
+  }
+
+  .btn {
+    margin: 0px 9px;
+    color: lightcyan;
+    background-color: black;
+    padding: 4px 3px;
+    /* border: 2px solid violet; */
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Gabriela', serif;
+  }
+
+  .btn:hover {
+    background-color: rgb(66, 69, 70);
+  }
+
+  .form-group input {
+    text-align: center;
+    display: block;
+    width: 85%;
+    padding: 1px;
+    border: 2px solid wheat;
+    margin: 10px auto;
+    font-size: 18px;
+    border-radius: 7px;
+    font-family: 'Gabriela', serif;
+  }
+
+  .container h2 {
+    text-align: center;
+  }
+
+  .container button {
+    width: 85.5%;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .container {
+    /* border: 2px solid white; */
+    margin: 65px 0px;
+    padding: 70px;
+    width: 30%;
+    border-radius: 28px;
+  }
+</style>
+
+<body>
+  <header class="header">
+    <!-- Left box for logo-->
+    <div class="left">
+      <img src="pictures/logo-fitness.png" alt="">
+
+    </div>
+    <!-- Mid box for navbar-->
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">fitness calculator</a></li>
+        <li><a href="#">contact</a></li>
+
+      </ul>
+    </div>
+    <!-- Right box for buttons -->
+    <div class="right">
+      <button class="btn">Call us now</button>
+      <button class="btn">Email us</button>
+
+    </div>
+  </header>
+  <div class="container">
+    <h2>Join the best gym of Patiala now</h2>
+    <form action="noaction.php">
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Name">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Age">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Gender">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Locality">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Contact Number">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Email Id">
+      </div>
+      <button class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
